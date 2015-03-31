@@ -1,0 +1,1044 @@
+﻿/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0; font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: ''; content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+@font-face {
+
+}
+body {
+    background:    /* url("images/images/2-1.png") no-repeat fixed top,*/
+    radial-gradient(circle at top center,
+    #5f88ac , rgba(23, 30, 41, 0.69) , #5f88ac ) no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin-bottom: 100px;
+}
+.wrapper {
+    width: 1000px;
+    /*border: 1px solid rgba(86, 204, 200, 0.52);*/
+    margin: 20px auto;
+    padding: 10px;
+}
+.clear {
+    clear: both;
+    visibility: hidden;
+    height: 0 !important;
+    width: 100%;
+}
+a:link {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+a:visited { color: #8e8e8e;}
+a:hover   { color: #54c8c4;}
+
+.header {
+    position: relative;
+    background: #ffffff;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.64) 5px 10px 30px;
+    z-index: 102;
+}
+.header>a{
+    display: inline-block;
+    position: relative;
+    background-color: #afafaf;
+    height: 20px;
+    width: 20px;
+    padding: 20px 23px 20px 20px;
+    float: left;
+    transition-duration: 1s;
+}
+.header>a:hover{
+    background-color: #56ccc8;
+    float: left;
+    transition-duration: 1s;
+}
+.header>a:focus{
+    background-color: #ea6060;
+    transition-duration: 1s;
+}
+.header>a img{
+    margin: 2px 0 0 0;
+    -webkit-animation: header-menu 0.7s 0.2s infinite alternate;
+    animation: header-menu 0.7s 0.2s infinite alternate;
+}
+@-webkit-keyframes header-menu {
+    from { transform: scale(0.8.0.8) }
+    to   { transform: scale(1.2,1.2) } }
+@keyframes header-menu {
+    from { transform: scale(0.8.0.8) }
+    to   { transform: scale(1.2,1.2) } }
+
+.topmenu ul{
+    position: relative;
+    display: block;
+}
+.topmenu li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 22px 15px 20px 15px;
+    font-size: 18px;
+    width: 80px;
+}
+.topmenu li a{
+    text-align: center;
+    position: relative;
+    display: block;
+    text-shadow: #d1d1d1 7px 7px 5px;
+}
+
+.header .right ul{
+    display: inline-block;
+    position: relative;
+    padding-left: 63px;
+}
+.header .right ul li{
+    width: 20px;
+    height: 20px;
+}
+.header .right ul li a{
+    position: relative;
+    display: block;
+}
+.header .right .search-icon {
+    display: block;
+    padding: 20px ;
+    border-right: 1px solid #dddddd;
+    float: left;
+}
+.search-icon:hover{
+    background-color: #152840;
+    transition-duration: 1s;
+}
+.header .right .icon-1 {
+    padding: 20px 20px 20px 25px;
+    width: 20px;
+    float: left;
+}
+.icon-1:hover{
+    background-color: #152840;
+    transition-duration: 1s;
+}
+
+.Login-Icon{
+    padding: 20px 20px 20px 20px  ;
+    width: 20px;
+    float: left;
+    border-left: 1px solid #dddddd;
+}
+.Login-Icon:hover{
+    background-color: #152840;
+    transition-duration: 1s;}
+
+.content {
+    margin: 10px 0;
+}
+
+/*----------------------LEFT----------------------------*/
+.content .topRow .left {
+    width: 245px;
+    position: relative;
+    float: left;
+}
+.left{
+    height: 700px;
+    box-shadow: rgba(0, 0, 0, 0.80) 15px 15px 30px;
+    z-index: 104;
+}
+.list-leftMenu{
+    display: block;
+    float:left;
+    border-bottom: 1px solid #dddddd;
+    height: 60px;
+}
+.list-leftMenu:hover{
+    background: #56ccc8;
+    transition-duration: 0.3s;
+}
+.list-leftMenu:hover a{
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+.left ul li a{
+    position: relative;
+    display: block;
+    line-height: 35px;
+}
+.leftMenu>li{
+    display: block;
+    width: 245px;
+    background: #ffffff;
+}
+.list-leftMenu img{
+    margin: 20px 40px -3px 20px;
+}
+/*----------------------------------------------------------------*/
+.contacts{
+    display: block;
+    position: absolute;
+    top: 427px;
+    background-color: #afafaf;
+    color: #ffffff;
+    height: 273px;
+}
+.contacts ul li a{
+    color: #ffffff;
+    line-height: 20px;
+}
+.contacts ul{
+    width: 245px;
+    padding-top: 25px;
+    display: block;
+}
+.contacts ul li{
+    display: block;
+    height: 60px;
+    padding: 0 0 0 30px;
+    margin: 20px 0 0 0;
+    white-space: pre-line;
+}
+.contacts img{
+    float: left;
+    padding-top: 6px;
+    margin: 0 30px 0 0;
+}
+.contacts li p{
+    transition: transform 0.5s;
+}
+.contacts li:hover p{
+    transform: scale(1.1,1.1);
+}
+/*-------------------------------------------------------------------*/
+.hidden {
+    display: none;
+    width: 245px;
+    height: 700px;
+    background: #152840;
+    position: absolute;
+    left: 100%;
+    font-size: 15px;
+    z-index: 102;
+    transition-duration: 1s;
+}
+.hidden :hover {
+    transition-duration: 1s;
+    color: #56ccc8;
+    background-color: #334457;
+}
+.hidden a {
+    color: #ffffff;
+    margin-left: 30px;
+}
+.hidden a:hover {
+    text-shadow: rgba(0, 0, 0, 0.80) 5px 10px 15px;
+}
+.hidden ul {
+    padding-top: 20px ;
+}
+.hidden>li:last-child ul{
+    padding-top: 20px ;
+}
+.hidden li ul{
+    border-bottom: 1px solid rgba(86, 204, 200, 0.47);
+    transition-duration: 1s;
+}
+.hidden li ul:hover{
+    box-shadow: rgba(0, 0, 0, 0.80) 5px 1px 30px 5px;
+}
+.hidden>li:last-child ul{
+    border-bottom: none;
+}
+.first-1{    height: 36px;}
+.first-2{    height: 36px;}
+.first-3{    height: 36px;}
+.first-4{    height: 36px;}
+
+.first-4 a:hover{
+    color: red;}
+.first-2 a:hover {
+    color: red;}
+
+/*------------------------------------------------------------------------------------*/
+.topRow .right {
+    width: 500px; float: right;
+}
+.left-1{
+    text-transform: capitalize;
+}
+.topRow-right-left {
+    float: left;
+}
+.topRow-right-left li {
+    padding: 30px 20px 0 30px;
+}
+.topRow-right-left li div{
+    display: inline-block;
+    background: #c7c7c7;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    transition:  transform 1s, background 1s;
+    transition-duration: 1.5s;
+}
+.topRow-right-left li div:hover {
+    background: #4fc6f8;
+    transform: scale(1.2,1.2);
+    transition-duration: 0.5s;
+}
+/*.topRow-right-left li div:hover .topRow-right-left-1 {
+    color: greenyellow;
+}*/
+.topRow .right .left-1 li a{
+    position: relative;
+    display: block;
+    padding: 9px 30px 18px 10px;
+    transition-duration: 1s;
+    color: #4fc6f8;
+}
+.facebook-icon-white{
+    padding-left: 3px;
+}
+.topRow .right .left-1 li a:hover{
+    color: #ffffff;
+    transition-duration: 0.6s;
+}
+.left-1 ul:last-of-type{
+    padding: 30px 0 0 10px;
+    font-size: 18px;
+    margin-left: 80px;
+}
+.left-1 ul:last-of-type li{
+    padding: 0 0 20px 0;
+}
+
+.topRow .right .left-1 {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    width: 245px;
+    height: 350px;
+    float: left;
+    z-index: 101;
+    box-shadow: rgba(0, 0, 0, 0.80) 15px 5px 30px;
+    transition: background 2s, transform 2s ;
+    animation: socialmenu 2s 2s infinite alternate;
+    -webkit-animation-name: socialmenu;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+.topRow .right .left-1:hover{
+    transform: rotateY(30deg);
+    background: #ff8471;
+    -webkit-animation-name: socialmenu;
+    animation-name: socialmenu;
+}
+@-webkit-keyframes socialmenu {
+    from {  transform: scale3d(0.98,0.98,1) /* rotateY(-30deg);*/}
+    to   {  transform: scale3d(1.03,1.03,1) /*rotateY(30deg);*/}
+}
+@keyframes socialmenu {
+    from {  transform: scale3d(0.98,0.98,1) /* rotateY(-30deg);*/}
+    to   {  transform: scale3d(1.03,1.03,1) /*rotateY(30deg);*/}
+}
+/*---------------------------------------- FB ----------------------------------------------*/
+.topRow .right .right>a{
+    display: block;
+    position: relative;
+}
+.topRow .right .right {
+    position: relative;
+    float: right;
+    width: 245px;
+}
+.topRow .right .right .top {
+    position: relative;
+    display: block;
+    background: #4d6baa;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.80) 10px 15px 30px;
+    z-index: 99;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    transition: background 2s, transform 1s;
+    animation: fb 2s 0.2s infinite alternate;
+    -webkit-animation-name: fb;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+.topRow .right .right .top:hover{
+    background: #553faa;
+    transition-duration: 1s;
+    z-index: 99;
+    /*transform: scale3d(0.95,0.95,1) rotate(3deg);*/
+    -webkit-animation-name: fb;
+    animation-name: fb;
+}
+@-webkit-keyframes fb {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   { background: #3b4daa; transform: scale3d(1.05,1.05,1) }}
+
+@keyframes fb {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   { background: #3b4daa; transform: scale3d(1.05,1.05,1) }}
+
+.Facebook-icon{
+    position: relative;
+    right: 9px;
+    bottom: 13px;
+    padding: 20px;
+}
+#fb{
+    position: absolute;
+    display: inline-block;
+    left: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.80) 4px 4px 10px;
+    transition: transform 1.5s, box-shadow 1s;
+}
+#fb:hover{
+    box-shadow: rgba(0, 0, 0, 0.66) 10px 10px 20px ;
+    transform: scale(1.3,1.3);
+}
+.K-156 li{
+    float: left;
+}
+.K-156 li a{
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    position: relative;
+    display: inline-block;
+    padding: 50px 20px 0 30px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    /*transition: transform 0.5s;*/
+
+    -webkit-animation-name: li-156;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes li-156 {
+    from { transform: scale3d(0.95,0.95,1); /*rotate(-2deg)*/}
+    to   { transform: scale3d(1,1,1); /*rotate(2deg)*/  }
+}
+.K-156 li a:visited{ color: #ffffff;}
+.K-156 li a:hover{
+    transition-duration: 0.5s;
+    transform: scale3d(1.1,1.1,1);
+    color: #cdcfd2;
+    -webkit-animation-name: li-156;
+}
+.K-156 li .follow{
+    position: relative;
+    display: inline-block;
+    padding: 50px 10px 0 44px;
+    margin-top: 80px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.K-156 li .follow-img{
+    margin: 125px 0 0 0;
+    padding: 0;
+}
+
+/*---------------------------------  TW  --------------------------------------------*/
+.topRow .right .right .bottom {
+    position: relative;
+    display: block;
+    background: #4fc6f8;
+    width: 100%;
+    height: 170px;
+    transition: background 2s, transform 1s;
+    box-shadow: rgba(0, 0, 0, 0.80) 10px 15px 30px;
+    z-index: 98;
+    animation: tw 2s linear 1s infinite alternate;
+    -webkit-animation: tw 2s linear 1s infinite alternate;
+    /*-webkit-animation-name: tw;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;*/
+}
+.topRow .right .right .bottom:hover{
+    /*background: rgba(0, 0, 0, 0.60);*/
+    /*transform: scale3d(0.95,0.95,1) rotate(-3deg);*/
+    z-index: 98;
+    -webkit-animation-name: tw;  animation-name: tw;
+}
+@-webkit-keyframes tw {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   { background: #5edff8; transform: scale3d(1.05,1.05,1) }
+}
+@keyframes tw {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   { background: #5edff8; transform: scale3d(1.05,1.05,1) }
+}
+.Twitter-icon{
+    position: relative;
+    right: 12px;
+    bottom: 12px;
+    padding: 20px;
+}
+#tw {
+    position: absolute;
+    left:30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ff1c1f;
+    transition-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.80) 4px 4px 10px;
+    transition: transform 1.5s, box-shadow 1s;
+}
+#tw:hover{
+    box-shadow: rgba(0, 0, 0, 0.66) 10px 10px 20px ;
+    transform: scale(1.3,1.3);
+}
+.K-156 li .following{
+    position: relative;
+    display: inline-block;
+    padding: 50px 10px 0 24px;
+    margin-top: 80px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+/*---------------------   SecondRow   -----------------------------*/
+.secondRow{
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 360px;
+    width: 500px;
+    height: 165px;
+    text-align: center;
+    transition: background 2s, transform 2s, box-shadow 2s;
+    box-shadow: rgba(0, 0, 0, 0.80) 8px 1px 40px 5px;
+    z-index: 100;
+    animation: secondRow 2s linear 0.2s infinite alternate;
+    -webkit-animation-name: secondRow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes secondRow {
+     from { background-color: white; transform: rotate(1deg); /*scale3d(0.95,0.95,1)*/ /* rotateY(-30deg);*/}
+     to   { background-color: rgba(255, 255, 255, 0.62); transform: rotate(-2deg); /*scale3d(1.03,1.03,1)*/ /*rotateY(30deg);*/}
+ }
+@keyframes secondRow {
+    from { background-color: white; transform: rotate(1deg); /*scale3d(0.95,0.95,1)*/ /* rotateY(-30deg);*/}
+    to   { background-color: rgba(255, 255, 255, 0.62); transform: rotate(-2deg); /*scale3d(1.03,1.03,1)*/ /*rotateY(30deg);*/}
+}
+.secondRow:hover{
+   /* background-color: rgba(255, 255, 255, 0.62);
+    transform: scale3d(1.1,1.2,1.1) rotate(1deg);*/
+    z-index: 100;
+    transition-duration: 1s;
+    -webkit-animation-name: secondRow; animation-name: secondRow;
+}
+.secondRow a:link {
+    color: white;
+}
+.secondRow a:visited {
+    color: white;
+}
+.secondRow p a:hover {
+    color: #ff7e7b;
+    transition-duration: 0.8s;
+}
+.secondRow a {
+    transition-duration: 3s;
+}
+.secondRow:hover a{
+    color: #ffffff;
+    transition-duration: 5s;
+}
+.secondRow p:first-child {
+    text-transform: capitalize;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.sign-in-icons{
+    padding-top: 11px;
+}
+.secondRow ul  {
+    margin: 20px 50px 50px 130px;
+}
+.secondRow ul li {
+    display: inline-block;
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin-right: 35px;
+    background: #ffffff;
+    border-radius: 60%;
+    box-shadow: #dddddd 0px 5px 5px;
+    transition: transform 1s, background 7s;
+}
+.secondRow:hover ul li{
+    background: #ff7e7b;
+    transition-duration: 7s;
+}
+.secondRow ul li:hover{
+    transform: scale(1.3,1.3);
+    background: #ffffff;
+    transition: transform 0.8s, background 0.8s;
+}
+
+/*-------------------------------------------------------------------------------------*/
+.thirdRow{
+    position: absolute;
+    background-color: #ffffff;
+    margin: 535px 0 0 0;
+    width: 500px;
+    height: 165px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.80) 8px 1px 30px 5px;
+    z-index: 101;
+    transition:  background 2s, width 2s, height 2s, transform 3s,
+    box-shadow 2s;
+}
+.thirdRow:hover{
+    position: relative;
+    background: #4d6baa;
+    transform: scale(1.1,1.1) rotate(-1deg);
+    z-index: 101;
+}
+.thirdRow p:first-child {
+    text-transform: capitalize;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.thirdRow a:link {
+    color: rgba(160, 160, 160, 0.85);
+}
+.thirdRow a:visited {
+    color: rgba(160, 160, 160, 0.85);
+}
+.thirdRow p a:hover {
+    color: #ff7e7b;
+    transition-duration: 0.8s;
+}
+.thirdRow a{
+    transition-duration: 3s;
+}
+.thirdRow:hover a{
+    color: #ffffff;
+    transition-duration: 3s;
+}
+.log ul{
+    margin-top: 30px;
+    margin-left: 80px;
+    display: block;
+}
+.log li{
+    float: left;
+}
+.log input {
+    text-indent: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    height: 33px;
+    color: #c7c5c5;
+    margin-right: 20px;
+}
+
+/*--------------------   Best   ------------------------------*/
+.best{
+    position: relative;
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    margin: 10px 10px 10px 0;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.80) 8px 1px 30px 5px;
+    z-index: 103;
+    transition: transform 2s, background 2s;
+    transition-duration: 1s;
+    animation:best 3s 2s infinite alternate;
+    -webkit-animation-name: best;
+    -webkit-animation-duration: 3s ;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes best {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   {background-color: #FF6352;  transform: scale3d(1,1,1) }
+}
+@keyframes best {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   {background-color: #FF6352;  transform: scale3d(1,1,1) }
+}
+.best img{
+    background-color: #FF6352;
+    padding: 20px 20px 20px 17px;
+    transition-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.52) 5px 5px 10px;
+}
+.best img:hover {
+    background-color: #9a9a9a;
+}
+.best p{
+    font-size: 22px;
+    white-space: pre-line;
+    line-height: 31px;
+    color: rgba(43, 43, 43, 0.64);
+    font-weight: bold;
+    text-shadow: 10px 8px 5px rgba(189, 189, 189, 0.62);
+    transition-duration: 1s;
+    margin: 50px 0 0 90px;
+}
+.best p:hover{
+    text-shadow: -10px 8px 5px rgba(189, 189, 189, 0.62);
+    transition-duration: 1s;
+}
+.best>p{
+    font-size: 15px;
+    white-space: pre-line;
+    color: rgba(93, 93, 93, 0.64);
+    margin: 40px 0 0 90px;
+    width: 230px;
+    text-align: left;
+    text-shadow: none;
+    line-height: 18px;
+}
+
+.best a:first-child{
+    margin: 50px 0;
+    width: 60px;
+    float: left;
+    display: block;
+}
+
+/*--------------------------MIDDLE ROW------BOX 1-------------*/
+.middleRow{
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+.middleRow .box1 {
+    position: relative;
+    float: left;
+    display: block;
+    background-color: #152840;
+    height: 300px;
+    width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.80) 15px 10px 30px;
+    z-index: 99;
+    transition: background 2s;
+    transition-duration: 1s;
+    margin: 10px 0 10px 0;
+
+    animation: box1 0.5s 0.2s infinite alternate;
+    -webkit-animation-name: box1;
+    -webkit-animation-duration: 0.5s ;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+.middleRow .box1:hover{
+    -webkit-animation-name: none;
+    animation-name: none;
+    background-color: #334457;
+    z-index: 99;
+    transition-duration: 1s;
+}
+@-webkit-keyframes box1 {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   { transform: scale3d(1,1,1) }
+}
+@keyframes box1 {
+    from { transform: scale3d(0.95,0.95,1) }
+    to   { transform: scale3d(1,1,1) }
+}
+.middleRow .box1 div:first-child {
+    position: relative;
+    float: left;
+    display: block;
+    margin: 100px 0 0 80px;
+}
+.middleRow .box1 div {
+    position: relative;
+    float: left;
+    display: block;
+    margin: 100px 0 0 20px;
+}
+
+.middleRow .box1 img{
+    padding: 20px;
+    transition: transform 2s;
+    transition-duration: 1s;
+}
+.middleRow .box1 img:hover {
+    transform: scale(1.3,1.3);
+}
+.middleRow .box1 p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    transition-duration: 1s;
+}
+.middleRow .box1 p:hover{
+    color: #56ccc8;
+    transition-duration: 1s;
+}
+
+/*----------------BOX 2-------------------------*/
+.middleRow .box2{
+    position: relative;
+    float: left;
+    display: block;
+    background-color: white;
+    height: 300px;
+    width: 330px;
+    margin: 10px 0 10px 10px ;
+    box-shadow: rgba(0, 0, 0, 0.80) 10px 10px 30px ;
+    z-index: 98;
+    transition-duration: 0.5s;
+    -webkit-animation: box2 4s 0.2s infinite alternate;
+    animation: box2 4s 0.2s infinite alternate;
+}
+.middleRow .box2:hover{
+    transition-duration: 0.5s;
+    -webkit-animation-name: non;
+    animation-name: non;
+}
+@-webkit-keyframes box2 {
+    from { transform: rotateY(0deg) }
+    to   { transform: rotateY(40deg) }
+}
+@keyframes box2 {
+    from { transform: rotateY(0deg) }
+    to   { transform: rotateY(40deg) }
+}
+.middleRow .box2 img{
+    background-color: #33caff;
+    padding: 20px 20px 20px 17px;
+    transition-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.52) 5px 5px 10px;
+}
+.middleRow .box2 img:hover {
+    background-color: #9a9a9a;
+}
+.middleRow .box2 p{
+    font-size: 22px;
+    white-space: pre-line;
+    line-height: 31px;
+    color: rgba(0, 0, 0, 0.64);
+    font-weight: bold;
+    text-shadow: 10px 8px 5px rgba(189, 189, 189, 0.62);
+    transition-duration: 1s;
+    margin: 50px 0 0 90px;
+}
+.middleRow .box2 p:hover{
+    text-shadow: -10px 8px 5px rgba(189, 189, 189, 0.62);
+    transition-duration: 1s;
+}
+.middleRow .box2>p{
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+    text-shadow: none;
+    white-space: pre-line;
+    color: rgba(124, 124, 124, 0.53);
+    margin: 40px 0 0 90px;
+    width: 220px;
+}
+.middleRow .box2 a:first-child{
+    margin: 50px 0;
+    width: 60px;
+    float: left;
+    display: block;
+}
+/*----------------BOX 3-------------------------*/
+
+.middleRow .box3{
+    font-family: 'Poiret One', cursive;
+    position: relative;
+    float: left;
+    display: block;
+    background-color: #ea6060;
+    height: 300px;
+    width: 330px;
+    margin: 10px 0 10px 10px ;
+    box-shadow: rgba(0, 0, 0, 0.80) 10px 10px 30px ;
+    z-index: 98;
+    transition-duration: 0.5s;
+    -webkit-animation: box3 3s 0.2s infinite alternate;
+    animation: box3 3s 0.2s infinite alternate;
+
+}
+.middleRow .box3:hover{
+    transition-duration: 0.5s;
+    -webkit-animation-name: non;
+    animation-name: non;
+}
+@-webkit-keyframes box3 {
+    from { transform: rotateX(0deg) }
+    to   { transform: rotateX(30deg); opacity: 0.5;}
+}
+@keyframes box3 {
+    from { transform: rotateX(0deg) }
+    to   { transform: rotateX(30deg); opacity: 0.5;}
+}
+.middleRow .box3 img{
+    transform: scale(0.9,0.9);
+    padding: 20px 0 0 60px;
+    transition-duration: 1s;
+}
+.middleRow .box3 img:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
+}
+.middleRow .box3 p{
+    width: 100px;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 5px rgba(214, 214, 214, 0.81);
+    transition-duration: 1s;
+    margin: 50px 0 0 60px;
+}
+.middleRow .box3 p:hover{
+    text-shadow: -10px 8px 5px rgba(189, 189, 189, 0.62);
+    transition-duration: 1s;
+}
+
+
+/*----------------------TABS-------------------------------*/
+#tabs{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    box-shadow: #000000 15px 10px 50px;
+}
+#tabs ul{
+    position: relative;
+    display: inline-block;
+}
+#tabs ul li {
+    font-size: 20px;
+    float: left;
+    width: 250px;
+}
+
+#tabs ul li a {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#tabs ul li a:hover{
+    background-color: #56ccc8;
+    color: white;
+    transition-duration: 0.5s;
+}
+#tabs ul li a:focus{
+    background: #000000;
+    color: #ffffff;
+    border: none;
+}
+.tabcontent{
+    padding: 60px 0 52px;
+    background: #000000;
+    width: 1000px;
+    font-size: 50px;
+    display: inline-block;
+    margin-top: -4px;
+}
+
+.tabcontent div>p:last-child{
+    padding: 0;
+    margin: 0 60px 0 60px;
+    position: inherit;
+    float: none;
+    color: #c6c6c6;
+    font-size: 20px;
+    width: auto;
+    text-align: justify;
+}
+.tabcontent div>p::first-letter{
+    font-weight: bolder ; color: #ff0000; }
+.tabcontent div>p::first-line{
+    color: #4d4d4d; }
+
+.tabcontent div>a:first-of-type{
+    margin: 0 0 0 60px;
+    float: left;
+    display: block;
+    opacity: 0.3;
+    transition: transform 2s, opacity 1s;
+}
+.tabcontent div>a:first-of-type:hover{
+    position: relative;
+    opacity: 1.0;
+    z-index: 101;
+    transform: scale(2,2);
+    transition-duration: 1s;
+}
+/*.tabcontent div>a:first-of-type:focus{
+    position: absolute;
+    opacity: 1.0;
+    z-index: 101;
+    transform: scale(1.5,1.5);
+    transition-duration: 1s;
+}*/
+.tabcontent div>a::first-letter{
+    font-weight: bolder ; color: #ff0000; }
+.tabcontent div>a:last-of-type{
+    color: #4d4d4d;
+    float: left;
+    margin: 75px 0 100px 0;
+    width: 300px;
+    text-align: center;
+    transition-duration: 1s;
+    text-shadow: rgba(89, 89, 89, 0.81) 10px 10px 10px;
+}
+.tabcontent div>a:last-of-type:hover{
+    color: #ffffff;
+}
+/*----------------------------------------------------------------------*/
+footer{
+    text-transform: uppercase;
+    color: #bfbfbf;
+    text-align: center;
+    margin: 0 0 10px 0;
+    -webkit-animation: copyright 2s ease-in-out infinite alternate;
+    animation: copyright 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes copyright {
+    from { transform: scale(0.9,0.9); }
+    to   { transform: scale(1.05,1.05); }
+}
+@keyframes copyright {
+    from { transform: scale(0.9,0.9); }
+    to   { transform: scale(1.05,1.05); }
+}
